@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Full-Stack Developer specializing in React, Node.js, and modern web technologies">
+    <meta name="keywords" content="full-stack developer, web developer, React, Node.js, JavaScript, portfolio">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Your Name - Full-Stack Developer">
+    <meta property="og:description" content="Building exceptional digital experiences with modern technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+    <meta property="og:image" content="https://your-portfolio-url.com/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Name - Full-Stack Developer">
+    <meta name="twitter:description" content="Building exceptional digital experiences with modern technologies">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#hero" class="nav-brand-link">YN</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="starfield" id="starfield"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title fade-in">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Your Name</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in">Full-Stack Developer</h2>
+                    <p class="hero-description fade-in">
+                        Building exceptional digital experiences with modern technologies. 
+                        I create scalable, user-friendly applications that solve real-world problems.
+                    </p>
+                    <div class="hero-cta fade-in">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <span>📸</span>
+                            <p>Your Photo Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about creating digital solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate full-stack developer with expertise in modern web technologies. 
+                        I love turning complex problems into simple, beautiful, and intuitive solutions.
+                    </p>
+                    <p>
+                        With experience in both frontend and backend development, I create end-to-end solutions 
+                        that are not only visually appealing but also highly functional and scalable.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">Framer Motion</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & DevOps</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Vercel</span>
+                                <span class="skill-tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Recent work that showcases my skills</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>🛒</span>
+                            <p>E-Commerce Platform</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://example-ecommerce.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <span>🔗</span>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/yourname/ecommerce-platform" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <span>📁</span>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with React, Node.js, and Stripe integration. 
+                            Features include user authentication, product management, and order processing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>📋</span>
+                            <p>Task Management App</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://task-manager.example.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <span>🔗</span>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/yourname/task-manager" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <span>📁</span>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task management application with real-time updates, 
+                            drag-and-drop functionality, and team collaboration features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>🌤️</span>
+                            <p>Weather Dashboard</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://weather-dashboard.example.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <span>🔗</span>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/yourname/weather-dashboard" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <span>📁</span>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            A responsive weather application with geolocation support, 7-day forecasts, 
+                            and interactive maps using modern weather APIs.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">CSS Grid</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Full-Stack Developer</h3>
+                            <span class="company">Tech Innovators Inc.</span>
+                            <span class="period">2022 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Led development of scalable web applications serving 100K+ users. 
+                            Implemented CI/CD pipelines and improved application performance by 40%.
+                        </p>
+                        <ul class="achievements">
+                            <li>Reduced loading times by 40%</li>
+                            <li>Led team of 4 developers</li>
+                            <li>Implemented microservices architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="company">Creative Solutions</span>
+                            <span class="period">2020 - 2022</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed responsive web applications using React and modern CSS. 
+                            Collaborated with design team to implement pixel-perfect UI components.
+                        </p>
+                        <ul class="achievements">
+                            <li>Built 15+ responsive websites</li>
+                            <li>Improved accessibility scores to 95+</li>
+                            <li>Mentored junior developers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Web Developer</h3>
+                            <span class="company">StartupXYZ</span>
+                            <span class="period">2019 - 2020</span>
+                        </div>
+                        <p class="timeline-description">
+                            Started career developing features for SaaS platform. 
+                            Gained experience in full-stack development and agile methodologies.
+                        </p>
+                        <ul class="achievements">
+                            <li>Contributed to 50+ feature releases</li>
+                            <li>Reduced bug reports by 30%</li>
+                            <li>Completed 10+ client projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in hearing about new opportunities and projects. 
+                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>your.email@example.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-method">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourname" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span>💼</span>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/yourname" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span>💻</span>
+                            GitHub
+                        </a>
+                        <a href="https://twitter.com/yourname" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span>🐦</span>
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>Built with ❤️ using modern web technologies</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
